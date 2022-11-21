@@ -44,9 +44,9 @@ export default function Home() {
           w="600px"
           borderRadius="md"
         >
-          <Link href="/counter">
+          <Link href="/posts">
             <Button colorScheme="teal" variant="ghost">
-              Mocks
+              Posts
             </Button>
           </Link>
         </Flex>
