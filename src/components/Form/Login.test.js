@@ -61,9 +61,7 @@ test("enviar formulário com senha e nome", async () => {
 
 test("mostrar nome do usuário quando logar", async () => {
   render(<Login />);
-
-  const username = "name";
-  const password = "pass";
+  const { username, password } = buildLoginForm();
 
   await userEvent.type(
     screen.getByRole("textbox", { name: /username/i }),
