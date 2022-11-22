@@ -4,7 +4,6 @@ import axios from "axios";
 function Posts() {
   const [posts, setPosts] = useState([]);
 
-  // fetch posts with axios
   useEffect(() => {
     axios.get(api).then((res) => {
       setPosts(res.data);
